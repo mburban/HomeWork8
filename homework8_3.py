@@ -9,3 +9,14 @@
 # 	    Зашифрованная строка, которую выдала программа: 'xjhwjy', 'tkknhj 8ba'
 # 	    Примечание: т.н. таблица шифрования может быть представлена как строка или список.
 
+
+letter_list = [chr(i) for i in (range(ord('a'), ord('a') + 26))]
+digit_list = [chr(j) for j in range(ord('0'), ord('0') + 10)]
+encryption_table = letter_list + digit_list
+print(letter_list)
+print(digit_list)
+print(encryption_table)
+
+random_string = input('Введите произвольные символы: ')
+test_list = list(random_string)
+print(test_list)
